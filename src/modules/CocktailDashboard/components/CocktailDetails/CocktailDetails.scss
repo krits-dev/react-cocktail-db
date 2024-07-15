@@ -1,0 +1,16 @@
+.cocktail-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  gap: 60px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 767px) {
+  .cocktail-details-wrapper {
+    margin-top: 140px;
+    padding: 15px;
+  }
+}

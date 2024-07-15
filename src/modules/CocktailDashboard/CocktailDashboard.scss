@@ -1,0 +1,13 @@
+.cocktail-dashboard-wrapper {
+  display: flex;
+  height: 800px;
+  border: 2px solid var(--black-primary);
+}
+
+@media screen and (max-width: 767px) {
+  .cocktail-dashboard-wrapper {
+    flex-direction: column;
+    height: 100%;
+    border: none;
+  }
+}

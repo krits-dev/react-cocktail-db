@@ -1,0 +1,16 @@
+.cocktail-sidebar-wrapper {
+  background: var(--white-primary);
+  width: 170px;
+  flex-shrink: 0;
+  padding-top: 20px;
+  border-right: 1px solid var(--black-primary);
+}
+
+@media screen and (max-width: 767px) {
+  .cocktail-sidebar-wrapper {
+    padding-top: 0;
+    width: 100%;
+    border-right: none;
+    position: fixed;
+  }
+}

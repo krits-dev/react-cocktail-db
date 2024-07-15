@@ -1,0 +1,66 @@
+.cocktail-card {
+  display: flex;
+  h2 {
+    font-size: 26px;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+
+  .cocktail-card-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &_tags {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_instructions {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-right: 60px;
+      margin-top: 20px;
+      span {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+    }
+
+    &_ingredients {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      span {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+      div {
+        display: flex;
+        gap: 60px;
+      }
+    }
+  }
+
+  .cocktail-card-image {
+    flex-shrink: 0;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cocktail-card {
+    flex-direction: column;
+    .cocktail-card-description {
+      &_instructions {
+        padding-right: 0;
+      }
+    }
+    .cocktail-card-image {
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+}

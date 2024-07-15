@@ -1,0 +1,41 @@
+ul.nav-links-wrapper {
+  width: 100%;
+  height: content;
+  display: block;
+
+  li a {
+    font-size: 20px;
+    padding: 2px 20px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    display: block;
+  }
+
+  li a:hover {
+    cursor: pointer;
+    color: var(--grey-primary);
+    transition: color 0.3s;
+  }
+  li a:not(:hover) {
+    transition: none;
+  }
+
+  li a.active-link {
+    cursor: default;
+    border-color: var(--grey-primary);
+    background-color: var(--white-secondary);
+  }
+
+  li a.active-link:hover {
+    color: var(--black-primary);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  ul.nav-links-wrapper {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    li a {
+      text-align: center;
+    }
+  }
+}
